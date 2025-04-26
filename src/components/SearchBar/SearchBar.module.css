@@ -1,0 +1,44 @@
+.header {
+  position: fixed; /* Фіксуємо на верху */
+  top: 0; /* Розташування на самому верху */
+  left: 0;
+  width: 100%; /* Ширина на всю сторінку */
+  background-color: rgb(22, 22, 75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  z-index: 1000; /* Зробити перекриття іншими елементами */
+}
+
+/* Стилі для інпуту */
+input {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #333131;
+  width: 300px;
+}
+
+/* Стилі для кнопки */
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-left: 15px;
+}
+
+button:hover,
+button:focus {
+  background-color: #90b0d1;
+}
+
+/* Додаємо відступ від верхньої частини контенту, щоб не накладати на інші елементи */
+body {
+  margin-top: 80px; /* Відступ, щоб контент не накладався на SearchBar */
+}

@@ -1,0 +1,30 @@
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 16px;
+  padding: 16px;
+  list-style: none;
+  margin: 0;
+}
+
+.imageCard {
+  overflow: hidden;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.imageCard img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.imageCard:hover {
+  transform: scale(1.05);
+}
+
+.loadMoreContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;
+}
